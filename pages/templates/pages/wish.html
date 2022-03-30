@@ -160,15 +160,34 @@
 
   <!-- FOOTER -->
   <footer class="container">
-    <p><a href="#">Back to top</a></p>
-    <figure class="text-end">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    {% comment %} <figure class="text-end">
       <blockquote class="blockquote">
         <p>May the joy that you give others come back to you on this special day. Happy birthday!</p>
       </blockquote>
       <figcaption class="blockquote-footer">
         from <cite title="Source Title">Surya</cite>
       </figcaption>
-    </figure>
+    </figure> {% endcomment %}
+
+    <div class="card mb-5" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body">
+            <figure class="text-end">
+              <blockquote class="blockquote">
+                <p>May the joy that you give others come back to you on this special day. Happy birthday!</p><br>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                from <cite title="Source Title">Surya</cite>
+              </figcaption>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'images/surya.jpg' %}" class="img-fluid rounded-start" alt="surya">
+        </div>
+      </div>
+    </div>
   </footer>
 </main>
 
